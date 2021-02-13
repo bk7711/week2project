@@ -1,0 +1,72 @@
+* {
+    color: white
+}
+:root{
+    --main_color:rgba(232, 102, 236);
+}
+body{
+    background-color: rgb(51, 48, 48);
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    /* flex: 0 0 33%; */
+    max-width: 400px;
+    border: 2px dashed white;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 10px 10px 20px 10px;
+}
+.titles{
+    border: 2px solid white;
+    position: relative;
+    margin-top: -20px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding:2px;
+}
+.tips{
+    margin: 5px;
+    padding: 3px;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    color: var(--main_color);
+}
+h2{
+    margin: 2px;
+    color: var(--main_color);
+}
+.heading{
+    color: var(--main_color);
+}
+
+@media screen and (max-width:992px){
+    .card{
+        max-width: 33%;
+    }
+}
+@media screen and (max-width:792px){
+    .card{
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:300px){
+    .card{
+        max-width:100%;
+    }
+}
+
+/* Ask about reponsiveness in miniproject */
